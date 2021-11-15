@@ -10,7 +10,7 @@ namespace AddressBookSystem
             while (flag)
             {
                 Console.WriteLine("Welcome to Address Book Program");
-                Console.WriteLine("Enter what you want to do : \n 1. Create Contacts \n 2.Add Contacts \n 3.Exit");
+                Console.WriteLine("Enter what you want to do : \n 1. Create Contacts \n 2. Add Contacts \n 3. Edit Contact \n 4. Delete Contact \n 5. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -35,6 +35,22 @@ namespace AddressBookSystem
                         con.Display();
                         break;
                     case 3:
+                        Console.WriteLine("Enter the contact which you want to Edit");
+                        string name = Console.ReadLine();
+                        ContactBook edit = new ContactBook();
+                        edit.AddContact();
+                        edit.EditContact(name);
+                        edit.Display();
+                        break;
+                    case 4:
+                        Console.WriteLine("Enter the contact you want to delete :");
+                        string detail = Console.ReadLine();
+                        ContactBook delete = new ContactBook();
+                        delete.AddContact();
+                        delete.DeleteContact(detail);
+                        delete.Display();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
