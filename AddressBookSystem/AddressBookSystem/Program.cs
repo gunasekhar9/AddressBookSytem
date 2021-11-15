@@ -10,7 +10,7 @@ namespace AddressBookSystem
             while (flag)
             {
                 Console.WriteLine("Welcome to Address Book Program");
-                Console.WriteLine("Enter what you want to do : \n 1. Create Contacts \n 2. Exit");
+                Console.WriteLine("Enter what you want to do : \n 1. Create Contacts \n 2.Add Contacts \n 3.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -29,6 +29,12 @@ namespace AddressBookSystem
                         };
                         break;
                     case 2:
+                        Console.WriteLine("Enter the contact to be added : ");
+                        ContactBook con = new ContactBook();
+                        con.AddContact();
+                        con.Display();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
