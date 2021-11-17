@@ -54,7 +54,7 @@ namespace AddressBookSystem
                         addressBook.Display();
                         break;
                     case 4:
-                        Console.WriteLine("Enter the Contact Name to be deleted : ");
+                        Console.WriteLine("Enter the Contact Name to deleted : ");
                         string detail = Console.ReadLine();
                         addressBook.DeleteContact(detail);
                         Console.WriteLine("Contact is Deleted Permanently");

@@ -78,7 +78,7 @@ namespace AddressBookSystem
                 }
             }
             addressList.Remove(delete);
-            Console.WriteLine(name + " contact is deleted Successfully from the Address Book \n");
+            Console.WriteLine(name + " contact is deleted Permanently from the Address Book \n");
         }
         public void Display()
         {
