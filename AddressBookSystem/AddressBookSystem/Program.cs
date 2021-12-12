@@ -12,7 +12,7 @@ namespace AddressBookSystem
             while (flag)
             {
                 Console.WriteLine("Welcome to the Address Book Program");
-                Console.WriteLine("Enter what you want to do : \n 1. Create Contacts \n 2. Add Contacts \n 3. Edit Contacts \n 4. Delete Contact \n 5. Add Multiple Contact \n 6. Add Unique Contact \n 7. Check For Duplicate Entry \n 8. Check for Person in City or State \n 9. Exit");
+                Console.WriteLine("Enter what you want to do : \n 1. Create Contacts \n 2. Add Contacts \n 3. Edit Contacts \n 4. Delete Contact \n 5. Add Multiple Contact \n 6. Add Unique Contact \n 7. Check For Duplicate Entry \n 8. Check for Person in City or State \n 9. View Persons by City or State \n 10. Number of persons by City or State \n 11. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -98,6 +98,20 @@ namespace AddressBookSystem
                         }
                         break;
                     case 9:
+                        break;
+                    case 10:
+                        Console.WriteLine("Select the options to Check\n 1. CityCount \n 2. StateCount");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        if (num == 1)
+                        {
+                            addressBook.CityCount();
+                        }
+                        if (num == 2)
+                        {
+                            addressBook.StateCount();
+                        }
+                        break;
+                    case 11:
                         flag = false;
                         break;
                 }
