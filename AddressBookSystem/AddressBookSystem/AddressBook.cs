@@ -118,5 +118,19 @@ namespace AddressBookSystem
             Console.WriteLine("Sorry this contact is already exists");
             return;
         }
+        public void CheckDuplicateEntry()
+        {
+            Console.WriteLine("Enter the Name to Check whether the name is Duplicate or not");
+            string checkD = Console.ReadLine();
+            var person = addressList.Find(e => e.FirstName.Equals(checkD));
+            if (person == null)
+            {
+                Console.WriteLine("The Name you are trying to check is Not in the Address Book");
+            }
+            else
+            {
+                Console.WriteLine("Error occured ! The Name : {0}, is already Exists in Address Book", checkD);
+            }
+        }
     }
 }
