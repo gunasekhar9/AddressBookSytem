@@ -1,0 +1,9 @@
+﻿﻿FirstName : Gunasekhar
+LastName : Satharajupalli
+Address : NTR Circle
+PhoneNumber : 9848032919
+EmailId : gunasekhar9542@bridgelabz.com
+City : Vijayawada
+State : AndhraPradesh
+ZIP : 522309
+SNN : 991989999
