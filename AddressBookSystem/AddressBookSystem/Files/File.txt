@@ -6,4 +6,3 @@ EmailId : gunasekhar9542@bridgelabz.com
 City : Vijayawada
 State : AndhraPradesh
 ZIP : 522309
-SNN : 991989999
