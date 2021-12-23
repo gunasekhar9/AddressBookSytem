@@ -1,0 +1,22 @@
+[
+  {
+    "FirstName": "Ajay",
+    "LastName": "Bhupalam",
+    "Address": "Siddhartha Nagar",
+    "City": "Kurnool",
+    "State": "AndhraPradesh",
+    "ZIP": "57383",
+    "PhoneNumber": "9515620361",
+    "Email": "ajay@bridgelabz.com"
+  },
+  {
+    "FirstName": "Vijay",
+    "LastName": "Bhupalam",
+    "Address": "Ashok Nagar",
+    "City": "Kakinada",
+    "State": "AndhraPradesh",
+    "ZIP": "587499",
+    "PhoneNumber": "8464025960",
+    "Email": "Vijaylucky@gmail.com"
+  }
+]
